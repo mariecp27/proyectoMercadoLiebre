@@ -1,0 +1,130 @@
+:root{
+    --myYellow: #EAC926;
+    --myBlue: #03264C;
+    --myLightBlue: #1259c3;
+    --myDarkGray: #666;
+    --myLightGray: #ebebeb;
+    --myGreen: #39b54a;
+    --myFamilyFont: 'Roboto', sans-serif;
+    --myParagraphs: 12px;
+    --myTitles: 24px;
+    --myPrices: 18px;
+    --myDiscounts: 16px;
+    --myDescriptions: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: var(--myFamilyFont);
+    background-color: var(--myLightGray);
+}
+
+
+.main-form h3{
+    font-size: var(--myTitles);
+    color: var(--myDarkGray);
+    text-align: center;
+    margin: 10px;
+}
+
+.main-form label, .main-form input{
+    display: block;   
+}
+
+.main-form__input{
+    margin: 15px auto;
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    font-size: 13px;
+    padding: 0 10px;
+}
+
+.main-form__label{
+    font-weight: bold;
+    margin: 15px auto;
+    width: 90%;
+    font-size: 15px;
+    color: var(--myDarkGray);
+}
+
+.main-form__radio{
+    width: 90%;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-form__checkbox{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+.main-form label input[type="checkbox"], .main-form label input[type="radio"]{
+    display: inline-block;
+    margin: 5px;
+}
+
+.main-form__radio label{
+    display: inline-block;
+}
+
+.main-form__buttons button{
+    display: block;
+    width: 90%;
+    margin: 15px auto;
+    background-color: var(--myLightBlue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+@media(min-width: 361px){
+
+    .main-form__input, .main-form__label, .main-form__radio, .main-form__checkbox, .main-form__buttons button{
+        width: 75%;
+    }
+
+    .main-form__radio{
+        margin: 0 auto;
+    }
+    
+}
+
+@media(min-width: 769px){
+
+    .main-form__input, .main-form__label, .main-form__radio, .main-form__checkbox, .main-form__buttons button{
+        width: 30%;
+    }
+
+    .main-form__buttons{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        margin: 10px auto;
+    }
+
+    .main-form__buttons button{
+        width: 45%;
+    }
+
+    .main-form-login{
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-form__buttons button:hover{
+        background-color: #0022AA;
+    }
+}
